@@ -52,6 +52,13 @@ nav {
   font-family: 'OldLondon', sans-serif;
 }
 
+.logoHeader a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .header-logo {
   max-width: 100px;
   height: auto;
