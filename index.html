@@ -28,27 +28,54 @@
 
 <main>
   <p>
-    Descubre nuestro nuevo desarrollo<br>
+    Descubre nuestra demo en <a href="https://relsouls.itch.io/hau">ESTE ENLACE</a><br>
     Pronto a la venta en distintas plataformas
   </p>
-  <p>
-    Embárcate en un cautivador juego de plataformas metroidvania en 2D<br>
-    donde la recolección de frutas es esencial y acompaña a Hau,<br>
-    una criatura linda y misteriosa, en un viaje emocionante.<br>
-    Con su fiel carrito, Hau puede recolectar y transportar frutas<br>
-    de un valor increíble que brindan mecánicas esenciales para superar los desafíos<br>
-    peligrosos que aguardan en esta tierra hostil.<br>
-  </p>
+
+  <div class="audio-player">
+    <h3>Main Theme</h3>
+    <audio id="miAudio">
+      <source src="audio/MainTheme.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <div class="controls">
+      <button onclick="document.getElementById('miAudio').play()">▶️ Play</button>
+      <button onclick="document.getElementById('miAudio').pause()">⏸ Pause</button>
+      <button onclick="document.getElementById('miAudio').volume += 0.1">🔊 +</button>
+      <button onclick="document.getElementById('miAudio').volume -= 0.1">🔉 -</button>
+    </div>
+  </div>
+
   <div class="imagesGame">
+    <p>
+      Embárcate en un cautivador juego de plataformas metroidvania en 2D<br>
+      donde la recolección de frutas es esencial y acompaña a Hau,<br>
+      una criatura linda y misteriosa, en un viaje emocionante.<br>
+    </p>
     <div class="background">
       <img src="img/background.png" alt="background">
     </div>
+    <p>
+      Con su fiel carrito, Hau puede recolectar y transportar frutas<br>
+      de un valor increíble que brindan mecánicas esenciales para superar los desafíos<br>
+      peligrosos que aguardan en esta tierra hostil.<br>
+    </p>
     <div class="bearBackdround">
       <img src="img/bearBackground.png" alt="bearBackdround">
     </div>
+    <p>
+      Descubre todo lo que Hau y este mundo te puede ofrecer<br>
+      Mejora tus habilidades, enfrenta distintos retos,<br>
+      enemigos y puzzles para poder avanzar<br>
+    </p>
     <div class="bossFight">
       <img src="img/bossFight.png" alt="bossFight">
     </div>
+    <p>
+      Pero no descuides el descanso<br>
+      y el disfrutar de esta tierra.<br>
+    </p>
     <div class="campFire">
       <img src="img/campFire.png" alt="campFire">
     </div>

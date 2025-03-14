@@ -105,6 +105,40 @@ nav ul li a:hover {
   transform: translateY(-5px);
 }
 
+/* audio */
+.audio-player {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #5e6151;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.audio-player h3 {
+  margin: 5px 0 10px 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #31322e;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #111210;
+}
+
 /* img promotional */
 .promotional {
   text-align: center;
