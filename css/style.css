@@ -26,7 +26,7 @@ p {
 }
 
 /* ==========================
-   Header & Navigation
+   Header & Navigation Styles
 ========================== */
 
 header {
@@ -233,7 +233,7 @@ footer {
 }
 
 /* =============================
-   Responsive Design
+   Responsive Design Styles
    ============================= */
 
 @font-face {
@@ -243,7 +243,9 @@ footer {
   font-style: normal;
 }
 
-/* Company Description Styles */
+/* =============================
+   Company Description Styles
+   ============================= */
 .company-description {
   max-width: 800px;
   margin: 0 auto;
@@ -271,7 +273,55 @@ footer {
   color: #000;
 }
 
-/* Ajuste para pantallas pequeñas */
+/* =============================
+   Team Container Styles
+   ============================= */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.team-member {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 20%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* =============================
+   Responsive Styles
+   ============================= */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -301,6 +351,18 @@ footer {
   .imagesGame img,
   .promotional img {
     max-width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .team-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .team-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
