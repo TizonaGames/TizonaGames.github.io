@@ -149,12 +149,18 @@ main {
   height: auto;
 }
 
-#promoVideo {
+.promoVideo {
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
+  max-width: 1080px;
   margin: 20px auto;
+}
+
+.promoVideo iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* para el responsive */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Opcional: sombra para resaltar */
 }
 
 .promotional {
@@ -352,17 +358,17 @@ footer {
   .promotional img {
     max-width: 100%;
   }
+}
 
-  @media (max-width: 1024px) {
-    .team-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+@media (max-width: 1024px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  @media (max-width: 768px) {
-    .team-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
