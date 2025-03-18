@@ -358,19 +358,39 @@ footer {
   .promotional img {
     max-width: 100%;
   }
-}
 
-@media (max-width: 1024px) {
-  .team-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
   .team-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media (min-width: 1440px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .imagesGame img,
+  .promotional img {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .team-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .imagesGame img,
+  .promotional img {
+    max-width: 1400px;
+  }
+}
+
 
 /* =============================
    Fonts
